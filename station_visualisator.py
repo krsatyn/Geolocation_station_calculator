@@ -38,7 +38,6 @@ VEC_AB_var_Y.set('0')
 kanva_width = 1024  # высота
 kanva_height = 1024 # ширина
 
-
 def create_window():
     
     window = tk.Toplevel(root)
@@ -271,11 +270,6 @@ C_height_entry = tk.Entry(root,textvariable = C_height_var, font=('calibre',10,'
 
 D_height_label = tk.Label(root, text = 'Высота D', font=('calibre',10, 'bold'))
 D_height_entry = tk.Entry(root,textvariable = D_height_var, font=('calibre',10,'normal'))
-
-
-
-# VEC_AB_X_label = tk.Label(root, text = 'Базис вектор X ', font=('calibre',10, 'bold'))
-# VEC_AB_X_entry = tk.Entry(root,textvariable = VEC_AB_var_X, font=('calibre',10,'normal'))
 
 VEC_AB_X_label = tk.Label(root, text = 'Базис вектор lon ', font=('calibre',10, 'bold'))
 VEC_AB_X_entry = tk.Entry(root,textvariable = VEC_AB_var_X, font=('calibre',10,'normal'))
