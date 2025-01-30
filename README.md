@@ -1,4 +1,4 @@
-# drawing_3D_-reconstruction
+# triangle_OCODe
 Высчитывает координаты подстанций
 
 Структура проекта:
@@ -15,14 +15,9 @@
 |
 |-- src                     # Хранит исходники
 |    |- init.py             # Делает src модулем  Python
-|    |- config.py           # Хранит конфигурации
-|    |- process.py          # обрабатывает данные перед обучением модели
-|    |- run_notebook.py     # выполняет блокноты
-|    |- train_model.py      # треннирует модель
 |
-|-- tests
-|    |- init.py             # Делает tests модулем  Python
-|    |- test_process.py     # Делает src модулем  Python
-|    |- test_train_model.py # Делает src модулем  Python
+|-- html                    # Хранит html страницы 
+|
+|-- logs                    # Хранит логи
 |
 |-- requirements.txt        # Необходимые библиотеки
