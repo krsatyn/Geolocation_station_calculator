@@ -13,3 +13,6 @@ $(VENVSCRIPTS)/activate: requirements.txt
 
 clean:
 	rmdir /s /q $(VENV)
+
+build:
+	auto-py-to-exe
