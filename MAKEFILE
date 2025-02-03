@@ -16,3 +16,7 @@ clean:
 
 build:
 	auto-py-to-exe
+
+
+start:
+	$(PYTHON) src/main.py

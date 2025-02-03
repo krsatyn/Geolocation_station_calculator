@@ -96,7 +96,7 @@ def create_window():
         A_coord = coord
         kanva.coords(A_point, coord.x-15, coord.y-15, coord.x+15, coord.y+15)
         kanva.coords(A_label, coord.x, coord.y-25)
-
+        
         return coord
     
     # Постановка точки по координатам
@@ -104,7 +104,7 @@ def create_window():
         A_coord = [float(A_x_inp.get()), float(A_y_inp.get())]
         kanva.coords(A_point, A_coord[0]-15, kanva_height-(A_coord[1]-15), A_coord[0]+15, kanva_height-(A_coord[1]+15))
         kanva.coords(A_label, A_coord[0], kanva_height-(A_coord[1]-25))
-        
+        print(type(A_coord))
         return A_coord 
     
     # Конвертация в долготы и широты
@@ -112,6 +112,7 @@ def create_window():
         proj_latlon = pyproj.Proj(proj='latlong',datum='WGS84')
         proj_xy = pyproj.Proj(proj="utm", zone=33, datum='WGS84')
         lonlat = pyproj.transform(proj_xy, proj_latlon, x, y)
+        print(type(lonlat[0]))
         return lonlat[0], lonlat[1]
     
     # Конвертация в X и Y
@@ -134,7 +135,6 @@ def create_window():
         BD = np.sqrt(float(BD_var.get())**2 - float(B_height_var.get())**2)
 
         VEC_AB = [float(VEC_AB_var_X.get()), float(VEC_AB_var_Y.get())]
-        print(VEC_AB)
         #VEC_AB = list(lonlat_to_xy(float(VEC_AB_var_X.get()), float(VEC_AB_var_Y.get())))
 
         # Расчет координаты B
@@ -148,6 +148,7 @@ def create_window():
                   A_coord[1] + AB * VEC_AB[1] / size_vector]
         
         calc_B_word = xy_to_lonlat(calc_B[0], calc_B[1])
+        print(type(calc_B_word))
         
         # Расчет координаты С
         def equations_C(vars):

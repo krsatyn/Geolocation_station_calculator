@@ -1,6 +1,9 @@
 # triangle_OCODe
 Высчитывает координаты подстанций
 
+Отслеживание задач:
+[клац сюда](https://app.todoist.com/app/project/r-zh-d-geopozitsionniy-proekt-6X92jfPqhxh8j3Rq)
+
 Структура проекта:
 ```python     
 |-- docs                    # документация проекта
@@ -19,5 +22,7 @@
 |-- html                    # Хранит html страницы 
 |
 |-- logs                    # Хранит логи
+|
+|-- docs                    # Хранит документацию и дополнительные матерьялы проекта
 |
 |-- requirements.txt        # Необходимые библиотеки
